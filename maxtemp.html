@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bootstrap Viualization Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="bootstrap.css">
+</head>
+
+<body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+                <a class="navbar-brand" href="#">Latitude</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
+                    aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+        
+                <div class="collapse navbar-collapse" id="navbarColor01">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home <span class="sr-only"></span></a>
+                        </li>
+                        <li class="nav-item active">
+                                <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle active" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Plots</a>
+                                        <div class="dropdown-menu">
+                                          <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                                          <a class="dropdown-item" href="humidity.html">Humiduty</a>
+                                          <a class="dropdown-item" href="maxtemp.html">Max Temp</a>
+                                          <a class="dropdown-item" href="windspeed.html">Windspeed</a>
+                                        </div>
+                                      </li>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="comparisons.html">Comparisons</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="data.html">Data</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+    
+            <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="jumbotron">
+                                <h2>
+                                    Maximum Temperature
+                                </h2>
+                                <hr size="5">
+                                <p>
+                                        <img class="card-img-top" src="Max_Temp_vs_Latitude.png" alt="maxtemp">
+                                </p>
+                                <p>
+                                    The sun's relative position is mostly right over the equator, so it's consistent that we see decrease in temperature as we move away from the equator. As we move farther north and south, the sun's relative angle shines less on these places on the earth.<br><br>
+                                    Additionally, we can see that this data was taken during the northern hemisphere's summer as there are more higher termperatures in the northern data than there is in the southern.  
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 col-sm-12">
+                                <div class="card mb-3">
+                                    <div class="card-header">
+                                        <h4 class="card-title">Visualizations</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-sm-3 col-md-6 text-center">
+                                                <a href="maxtemp.html" class="card-link">
+                                                    <img class="img-fluid"
+                                                        src="Max_Temp_vs_Latitude.png"
+                                                        alt="Latitude vs. Max Temp"><br>
+                                                    Latitude vs. Tempurature<br><i class='fas fa-temperature-high'></i></a>
+                                            </div>
+                                            <div class="col-sm-3 col-md-6 text-center">
+                                                <a href="windspeed.html" class="card-link">
+                                                    <img class="img-fluid"
+                                                        src="Wind_Speed_vs_Latitude.png"
+                                                        alt="Latitude vs. Wind Speed">
+                                                    <br>Latitude vs. Wind Speed<br><i class='fas fa-wind'></i></a>
+                                            </div>
+                
+                                            <div class="col-sm-3 col-md-6 text-center">
+                                                <a href="cloudiness.html" class="card-link">
+                                                    <img class="img-fluid"
+                                                        src="Cloudiness_vs_Latitude.png" 
+                                                        alt="Latitude vs. Cloudiness">
+                                                    <a href="cloudiness.html" class="card-link"><br>Latitude vs. Cloudiness<br><i
+                                                            class="wi wi-cloudy"></i></a>
+                                            </div>
+                                            <div class="col-sm-3 col-md-6 text-center">
+                                                <a href="humidity.html" class="card-link">
+                                                    <img class="img-fluid"
+                                                        src="Humidity_vs_Latitude.png"
+                                                        alt="Latitude vs. Humidity">
+                                                    <br>Latitude vs. Humidity<br><i class="wi wi-humidity"></i></a>
+                                            </div>
+                                        </div>
+                
+                                    </div>
+                                </div>
+                            </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
